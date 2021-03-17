@@ -1,0 +1,43 @@
+using System;
+
+namespace segundo_ejercicio
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            string edad_cadena;
+      string estatura_cadena;
+   int edad;
+   int estatura;
+   
+            Console.WriteLine("Por favor ingrese su edad:");
+            edad_cadena = Console.ReadLine();
+   
+            edad = Convert.ToInt32(edad_cadena);
+            if(edad <= 15)
+            {
+                Console.WriteLine("Puedes entrar al parque :)");
+            }
+            else
+            {
+                Console.WriteLine("Lo siento, no puedes entrar al parque :(");
+                Console.WriteLine("Ingresa tu estatura en centímetros: ");
+    
+                estatura_cadena = Console.ReadLine();
+                estatura = Convert.ToInt32(estatura_cadena);
+    
+                if(estatura >= 150)
+                {
+                Console.WriteLine("Puedes disfrutar de cualquier juego");    
+                }
+                else
+                {
+                    Console.WriteLine("Sólo puedes ir al columpio y al subibaja");
+                }
+            }
+            
+        }
+    }
+}
+  
